@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Creative - Graphics Designer Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Alex Creative</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Creative Graphics Designer</h1>
+                        <p>Bringing ideas to life through visual storytelling and innovative design solutions.
+                        </p>
+                        <a href="#portfolio" class="cta-button">View My Work</a>
+                    </div>
+                    <img src="./asset/profile.png" alt="Profile Picture" class="profile-img"
+                        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMikiLz4KPHN2ZyB4PSI1MCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9InJnYmEoMjU1LCAyNTUsIDI1NSwgMC42KSI+CjxwYXRoIGQ9Ik0xMiAyQzEzLjEgMiAxNCAyLjkgMTQgNEMxNCA1LjEgMTMuMSA2IDEyIDZDMTAuOSA2IDEwIDUuMSAxMCA0QzEwIDIuOSAxMC45IDIgMTIgMlpNMjEgOVYyMkgyMFYxMEgxN1Y4SDE0VjEwSDEwVjhIN1YxMEg0VjIySDF2LTEuNjFMMTggMTZWMTBIMTdWOEgyMVY5WiIvPgo8L3N2Zz4KPC9zdmc+'">
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">My Portfolio</h2>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="animation">Animation</button>
+                    <button class="filter-btn" data-filter="background">Background</button>
+                    <button class="filter-btn" data-filter="character">Character Design</button>
+                    <button class="filter-btn" data-filter="book">Book Cover</button>
+                    <button class="filter-btn" data-filter="painting">Color Painting</button>
+                    <button class="filter-btn" data-filter="icon">Icon</button>
+                    <button class="filter-btn" data-filter="pattern">Pattern</button>
+                    <button class="filter-btn" data-filter="pencil">Pencil Drawing</button>
+                    <button class="filter-btn" data-filter="storyboard">Story Board</button>
+                    <button class="filter-btn" data-filter="typography">Typography</button>
+                </div>
+
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Portfolio items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a second-year graphic design student at FPT University. I enjoy exploring and combining both traditional and contemporary art styles.</p>
+                        <p>I believe that great design is not just about aesthetics—it's about solving problems, telling
+                            stories, and creating emotional connections. Whether it's a book cover that captures the
+                            essence of a story or an animation that brings characters to life, I strive to create work
+                            that resonates with audiences.</p>
+                        <div class="skills">
+                            <span class="skill-tag">Adobe Creative Suite</span>
+                            <span class="skill-tag">Animation</span>
+                            <span class="skill-tag">Illustration</span>
+                            <span class="skill-tag">Typography</span>
+                            <span class="skill-tag">Character Design</span>
+                            <span class="skill-tag">Pattern Design</span>
+                            <span class="skill-tag">Digital Painting</span>
+                            <span class="skill-tag">Storyboarding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p>Have a project in mind? I'd love to hear about it and discuss how we can bring your vision to
+                        life.</p>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Project Type</label>
+                            <input type="text" id="project" name="project"
+                                placeholder="e.g., Book Cover, Animation, Logo Design">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Behance">🎨</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="#" aria-label="Email">📧</a>
+            </div>
+            <p>&copy; Email: vinhnt592005@gmail.com   Phone: 0898050905
+</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <div id="modal-media"></div>
+            <div class="modal-info">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+                <span id="modal-category" class="category"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
